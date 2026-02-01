@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Local Chrome Extension artifacts
+*.crx
+*.pem
+
+# Node modules (if you add npm later)
+node_modules/
+
+# Environment files
+.env
+.env.local

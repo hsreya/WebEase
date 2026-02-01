@@ -1,0 +1,191 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  width: 280px;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 400px;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #e0e0e0;
+  font-size: 12px;
+}
+
+input[type="range"], select {
+  width: 100%;
+  margin-top: 4px;
+}
+
+input[type="range"] {
+  accent-color: #4fd1c5;
+}
+
+select {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255,255,255,0.9);
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  font-size: 12px;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.35);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin: 15px 0;
+}
+
+/* Voice Assistant Section */
+.voice-section {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.voice-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(79, 209, 197, 0.3);
+}
+
+.voice-btn:hover {
+  background: linear-gradient(135deg, #38b2ac 0%, #319795 100%);
+  box-shadow: 0 6px 20px rgba(79, 209, 197, 0.4);
+}
+
+.voice-btn.listening {
+  animation: pulse 1.5s infinite;
+  background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+  box-shadow: 0 4px 15px rgba(245, 101, 101, 0.4);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.mic-icon {
+  font-size: 24px;
+}
+
+.voice-feedback {
+  margin-top: 10px;
+  padding: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: #e0e0e0;
+  font-size: 12px;
+  min-height: 20px;
+  display: none;
+}
+
+.voice-feedback.active {
+  display: block;
+}
+
+.voice-commands-hint {
+  margin-top: 8px;
+  font-size: 10px;
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+}
+
+/* TTS Section */
+.tts-section {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tts-section .buttons {
+  margin-top: 0;
+}
+
+.tts-section label {
+  margin-top: 8px;
+}
+
+#speedLabel {
+  color: #4fd1c5;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* AI Section */
+.ai-section {
+  margin-top: 10px;
+}
+
+.summary-output {
+  margin-top: 8px;
+  background: rgba(255,255,255,0.15);
+  padding: 10px;
+  min-height: 50px;
+  white-space: pre-wrap;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #e0e0e0;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.5);
+}

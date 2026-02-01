@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Font Customizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+  <h3>Voice Assistant</h3>
+  <div class="voice-section">
+    <button id="voiceBtn" class="voice-btn">
+      <span class="mic-icon">MIC</span>
+      <span id="voiceStatus">Tap to Speak</span>
+    </button>
+    <div id="voiceFeedback" class="voice-feedback"></div>
+    <div class="voice-commands-hint">
+      Try: "Increase font size", "Make text bold", "Read this page"
+    </div>
+  </div>
+
+  <hr>
+
+  <h3>Font Settings</h3>
+
+  <label>Font Size</label>
+  <input type="range" id="fontSize" min="12" max="30" value="16">
+
+  <label>Line Spacing</label>
+  <input type="range" id="lineHeight" min="1" max="3" step="0.1" value="1.5">
+
+  <label>Font Family</label>
+  <select id="fontFamily">
+    <option value="default">Default</option>
+    <option value="Arial">Arial</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Verdana">Verdana</option>
+    <option value="OpenDyslexic">OpenDyslexic</option>
+  </select>
+
+  <div class="buttons">
+    <button id="bold">Bold</button>
+    <button id="italic">Italic</button>
+  </div>
+
+  <hr>
+  <h3>Read Aloud</h3>
+  <div class="tts-section">
+    <div class="buttons">
+      <button id="readPageBtn">Read Page</button>
+      <button id="stopReadBtn">Stop</button>
+    </div>
+    <label>Speech Speed</label>
+    <input type="range" id="speechRate" min="0.5" max="2" step="0.1" value="1">
+    <span id="speedLabel">1x</span>
+  </div>
+
+  <hr>
+  <h3>AI Summarization</h3>
+  <div class="ai-section">
+    <div class="buttons">
+      <button id="summarizePageBtn">Summarize page</button>
+    </div>
+
+    <label>Summary</label>
+    <div id="summaryOutput" class="summary-output"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
